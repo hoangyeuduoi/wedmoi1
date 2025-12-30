@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BOBY Book | Website Bán Sách</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f4;
+      }
+
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+      }
+
+      nav {
+        background: #34495e;
+        padding: 12px;
+      }
+
+      nav a {
+        color: white;
+        margin-right: 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #f1c40f;
+      }
+
+      .container {
+        width: 95%;
+        margin: auto;
+        padding: 20px 0;
+      }
+
+      /* VIDEO */
+      .video-section {
+        margin-bottom: 40px;
+      }
+
+      .video-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .video-list video {
+        width: 700px;
+        height: 400px;
+      }
+
+      /* PRODUCTS */
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 7fr));
+        gap: 40px;
+      }
+
+      .product {
+        background: white;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .product img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .product h3 {
+        margin: 10px 0;
+      }
+
+      .product p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.5;
+      }
+
+      .price {
+        color: red;
+        font-weight: bold;
+        margin: 8px 0;
+      }
+
+      .product a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background: #2c3e50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+
+      .product a:hover {
+        background: #f1c40f;
+        color: black;
+      }
+
+      footer {
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      .counter {
+        color: #f1c40f;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+   <body>
+    <header>
+      <h1>📚 BOBY Book</h1>
+      <p>Website thuộc bản quyền về TRẦN GIANG MỚI – CHẸP</p>
+    </header>
+
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="https://www.24h.com.vn/sach-giao-khoa-c216e8001.html">Tin tức & Sự kiện</a>
+      <a href="https://www.sachhayonline.com/">Tác giả</a>
+      <a href="https://www.fahasa.com/sai-gon-books-sach-moi?srsltid=AfmBOooM62p2C2HfdccFutt-EI-SGXnDYSZ3rInlfOwWd33jahHaQ4T1">Sản Phẩm Mới</a>
+      <a href="https://www.sachweb.com/">Bộ lọc</a>
+    </nav>
+
+    <div class="container">
+      <!-- VIDEO -->
+      <div class="video-section">
+        <h2>🎥 Video Giới Thiệu</h2>
+        <div class="video-list">
+          <video width="700" height="400" controls>
+             <source src="video/Media_haiphong_thvothisau_2023_3_28_3a10-1_28320239.mp4" type="video/mp4"
+            allowfullscreen
+          ></video>
+          <video width="700" height="400" controls>
+             <source src="video/Media_haiphong_thvothisau_2023_4_10_3a5-1_104202310.mp4" type="video/mp4"
+            allowfullscreen
+          ></video>
+        </div>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="products">
+        <div class="product">
+          <img src="image/nhagiakim.jpg" alt="Nhà Giả Kim" />
+          <h3>Nhà Giả Kim</h3>
+          <p>
+            📖 Nhà Giả Kim (The Alchemist) Tác giả: Paulo Coelho Thể loại: Văn
+            học – Triết lý – Truyền cảm hứng Xuất bản lần đầu: 1988 🧠 Nội dung
+            chính Nhà Giả Kim kể về hành trình của Santiago, một cậu bé chăn cừu
+            người Tây Ban Nha, dám từ bỏ cuộc sống quen thuộc để theo đuổi “Kho
+            báu” xuất hiện trong giấc mơ của mình. Trên hành trình băng qua sa
+            mạc, Santiago gặp nhiều con người khác nhau – mỗi người mang đến cho
+            cậu một bài học về cuộc sống, đức tin và ước mơ.
+          </p>
+          <p class="price">119.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/chipheo.jpg" alt="Chí Phèo" />
+          <h3>Chí Phèo</h3>
+          <p>
+            📖 Chí Phèo Tác giả: Nam Cao Thể loại: Truyện ngắn – Văn học hiện
+            thực phê phán Sáng tác: 1941 🧠 Nội dung chính Chí Phèo kể về cuộc
+            đời bi kịch của Chí, một người nông dân hiền lành nhưng bị xã hội
+            phong kiến đẩy vào con đường tha hóa. Từ một con người lương thiện,
+            Chí trở thành kẻ say rượu, chửi bới và bị cả làng Vũ Đại xa lánh,
+            coi như một “con quỷ dữ”. Cuộc gặp gỡ với Thị Nở đã đánh thức phần
+            nhân tính còn sót lại trong Chí Phèo. Lần đầu tiên, Chí khao khát
+            được làm người lương thiện, được sống một cuộc đời bình thường. Tuy
+            nhiên, xã hội tàn nhẫn đã không cho Chí cơ hội quay đầu, đẩy nhân
+            vật vào kết cục bi thương.
+          </p>
+          <p class="price">73.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/canhdongbattan.jpg"
+            alt="Cánh Đồng Bất Tận"
+          />
+          <h3>Cánh Đồng Bất Tận</h3>
+          <p>
+            📖 Cánh Đồng Bất Tận Tác giả: Nguyễn Ngọc Tư Thể loại: Truyện ngắn –
+            Văn học hiện đại Xuất bản: 2005 🧠 Nội dung chính Cánh Đồng Bất Tận
+            xoay quanh cuộc sống lênh đênh của một người cha và hai đứa con rong
+            ruổi trên những cánh đồng miền Tây sông nước. Sau cú sốc tinh thần
+            từ người vợ bỏ đi, người cha trở nên lạnh lùng, khắc nghiệt, mang
+            nỗi đau và sự hận thù trút lên các con và những người phụ nữ khác.
+            Qua góc nhìn của đứa con gái, tác phẩm khắc họa những tổn thương âm
+            thầm, sự cô đơn, khát khao yêu thương và những bi kịch không lời của
+            con người trong cuộc sống nghèo khó, bấp bênh.
+          </p>
+          <p class="price">95.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/bandomay.jpg" alt="Bản Đồ Mây" />
+          <h3>Bản Đồ Mây</h3>
+          <p>
+            📖 Bản Đồ Mây (Cloud Atlas) Tác giả: David Mitchell Thể loại: Tiểu
+            thuyết – Văn học hiện đại – Khoa học viễn tưởng – Triết lý Xuất bản
+            lần đầu: 2004 🧠 Nội dung chính Bản Đồ Mây là một tiểu thuyết độc
+            đáo với cấu trúc lồng ghép, gồm sáu câu chuyện diễn ra ở những thời
+            điểm và không gian khác nhau: từ thế kỷ 19, hiện tại, cho đến tương
+            lai xa của nhân loại. Mỗi câu chuyện có nhân vật, bối cảnh và thể
+            loại riêng, nhưng tất cả đều liên kết chặt chẽ với nhau bằng những
+            dấu vết tinh tế. Các nhân vật trong Bản Đồ Mây đều phải đối mặt với
+            tham vọng, quyền lực, tự do, sự áp bức và khát vọng sống, cho thấy
+            lịch sử của loài người dường như luôn lặp lại dưới nhiều hình thức
+            khác nhau.
+          </p>
+          <p class="price">98.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/concoclamcauongtroi.jpg"
+            alt="Con Cóc Làm Cậu Ông Trời"
+          />
+          <h3>Con Cóc Làm Cậu Ông Trời</h3>
+          <p>
+            📖 Con Cóc Là Cậu Ông Trời Thể loại: Truyện cổ tích dân gian Việt
+            Nam Đối tượng: Thiếu nhi – Học sinh tiểu học, THCS 🧠 Nội dung chính
+            Con Cóc Là Cậu Ông Trời kể về nạn hạn hán kéo dài, khiến muôn loài
+            khổ sở vì thiếu nước. Trước tình cảnh đó, cóc – một con vật nhỏ bé –
+            đã đứng lên, dẫn đầu các loài vật khác như gà, ong, hổ, cá sấu lên
+            thiên đình để đòi mưa từ ông Trời. Nhờ sự thông minh, dũng cảm và
+            đoàn kết, cóc và các bạn đã khiến ông Trời phải lắng nghe và cho mưa
+            xuống trần gian. Từ đó, dân gian truyền rằng: 👉 “Con cóc là cậu ông
+            Trời” – hễ cóc nghiến răng là trời mưa.
+          </p>
+          <p class="price">98.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/cactrieudaivietnam.jpg"
+            alt="Các Triều Đại Việt Nam"
+          />
+          <h3>Các Triều Đại Việt Nam</h3>
+          <p>
+            📖 Các Triều Đại Việt Nam Tác giả: Trần Trọng Kim (hoặc nhiều bản
+            biên soạn, tổng hợp lịch sử) Thể loại: Lịch sử Việt Nam – Tham khảo
+            – Giáo dục 🧠 Nội dung chính Các Triều Đại Việt Nam là cuốn sách
+            tổng hợp và hệ thống hóa toàn bộ lịch sử các triều đại phong kiến
+            Việt Nam, từ thời Hồng Bàng – Vua Hùng, qua các triều Ngô, Đinh, Lê,
+            Lý, Trần, Hồ, Tây Sơn, cho đến triều Nguyễn – triều đại phong kiến
+            cuối cùng của nước ta. Cuốn sách trình bày diễn biến lịch sử theo
+            trình tự thời gian, nêu rõ: Các vị vua tiêu biểu Sự kiện lịch sử
+            quan trọng Công cuộc dựng nước và giữ nước Những thăng trầm của dân
+            tộc qua từng triều đại
+          </p>
+          <p class="price">129.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/dacnhantam.png" alt="Đắc Nhân Tâm" />
+          <h3>Đắc Nhân Tâm</h3>
+          <p>
+            📖 Đắc Nhân Tâm (How to Win Friends and Influence People) Tác giả:
+            Dale Carnegie Thể loại: Kỹ năng sống – Giao tiếp – Phát triển bản
+            thân Xuất bản lần đầu: 1936 🧠 Nội dung chính Đắc Nhân Tâm là cuốn
+            sách kinh điển về nghệ thuật giao tiếp và ứng xử, giúp người đọc
+            hiểu được tâm lý con người và xây dựng các mối quan hệ tích cực
+            trong cuộc sống cũng như công việc. Cuốn sách không đưa ra những lý
+            thuyết khô khan, mà thông qua những câu chuyện thực tế, ví dụ sinh
+            động, tác giả chỉ ra cách: Gây thiện cảm với người khác Thuyết phục
+            mà không gây phản cảm Ứng xử khéo léo trong giao tiếp Lãnh đạo và
+            truyền cảm hứng cho người khác
+          </p>
+          <p class="price">111.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/dinhbolinh.jpg" alt="Đinh Bộ Lĩnh" />
+          <h3>Đinh Bộ Lĩnh</h3>
+          <p>
+            📖 Đinh Bộ Lĩnh Thể loại: Lịch sử – Truyện lịch sử – Nhân vật lịch
+            sử Việt Nam Đối tượng: Học sinh, sinh viên, người yêu lịch sử 🧠 Nội
+            dung chính Cuốn sách Đinh Bộ Lĩnh tái hiện cuộc đời và sự nghiệp của
+            Đinh Bộ Lĩnh – vị anh hùng dân tộc có công dẹp loạn 12 sứ quân,
+            thống nhất đất nước vào thế kỷ X, mở ra thời kỳ độc lập tự chủ lâu
+            dài cho dân tộc Việt Nam sau nhiều năm chia cắt. Từ hình ảnh cậu bé
+            chăn trâu với trò “cờ lau tập trận”, Đinh Bộ Lĩnh đã trưởng thành
+            trong loạn lạc, rèn luyện ý chí kiên cường, bản lĩnh lãnh đạo và tài
+            thao lược để trở thành vị hoàng đế đầu tiên của nhà nước phong kiến
+            Việt Nam độc lập.
+          </p>
+          <p class="price">98.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/doanhnghiepcuatheky21.jpg"
+            alt="Nhà Giả Kim"
+          />
+          <h3>Doanh Nghiệp Của Thế Kỉ 21</h3>
+          <p>
+            📖 Doanh Nghiệp Của Thế Kỷ 21 (The Business of the 21st Century) Tác
+            giả: Robert T. Kiyosaki Thể loại: Kinh doanh – Tài chính – Phát
+            triển bản thân 🧠 Nội dung chính Doanh Nghiệp Của Thế Kỷ 21 tập
+            trung phân tích và giới thiệu mô hình kinh doanh hiện đại trong thời
+            đại toàn cầu hóa, đặc biệt là kinh doanh theo mạng lưới (Network
+            Marketing). Tác giả cho rằng trong thế kỷ 21, con đường làm giàu
+            không còn phụ thuộc hoàn toàn vào việc làm thuê truyền thống, mà nằm
+            ở tư duy kinh doanh, xây dựng hệ thống và phát triển kỹ năng cá
+            nhân. Cuốn sách nhấn mạnh rằng giáo dục tài chính và tư duy làm chủ
+            là chìa khóa giúp con người thích nghi và thành công trong nền kinh
+            tế mới.
+          </p>
+          <p class="price">89.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/doingandungngudai.jpg"
+            alt="Đời Ngắn Đừng Ngủ Dài"
+          />
+          <h3>Đời Ngắn Đừng Ngủ Dài</h3>
+          <p>
+            Tác giả: Robin Sharma Thể loại: Kỹ năng sống – Truyền cảm hứng –
+            Phát triển bản thân 🧠 Nội dung chính Đời Ngắn Đừng Ngủ Dài là cuốn
+            sách truyền cảm hứng mạnh mẽ, giúp người đọc nhận thức rõ giá trị
+            của thời gian và cuộc sống. Thông qua những câu chuyện ngắn, bài học
+            sâu sắc và lời khuyên thực tế, tác giả khuyến khích mỗi người sống
+            tỉnh thức, chủ động và có mục tiêu rõ ràng. Cuốn sách nhấn mạnh rằng
+            cuộc đời con người rất ngắn, và nếu sống trong thói quen trì hoãn,
+            sợ hãi hay an phận, ta sẽ dễ dàng đánh mất những cơ hội quý giá để
+            phát triển bản thân và chạm tới ước mơ.
+          </p>
+          <p class="price">98.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/dongdao.jpg" alt="Đồng Giao" />
+          <h3>Đồng Giao</h3>
+          <p>
+            Thể loại: Văn học dân gian Đối tượng: Thiếu nhi – Giáo dục – Văn hóa
+            truyền thống 🧠 Nội dung chính Đồng dao là những bài thơ, câu vè,
+            lời hát dân gian truyền miệng, gắn liền với tuổi thơ của trẻ em Việt
+            Nam. Đồng dao thường có nội dung đơn giản, vần điệu dễ nhớ, dễ đọc,
+            được sử dụng trong các trò chơi dân gian hoặc sinh hoạt tập thể. Một
+            số bài đồng dao quen thuộc như: Dung dăng dung dẻ Rồng rắn lên mây
+            Chi chi chành chành Nu na nu nống
+          </p>
+          <p class="price">29.000 VND</p>
+
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/giaithoaidangianvietnam.jpg"
+            alt="Giai Thoại giân gian Việt Nam"
+          />
+          <h3>Giai Thoại giân gian Việt Nam</h3>
+          <p>
+            Thể loại: Văn học dân gian – Truyện kể – Văn hóa truyền thống Đối
+            tượng: Mọi lứa tuổi 🧠 Nội dung chính Giai Thoại Dân Gian Việt Nam
+            là tuyển tập những câu chuyện dân gian ngắn gọn, sinh động, được lưu
+            truyền qua nhiều thế hệ trong đời sống văn hóa Việt Nam. Các giai
+            thoại thường xoay quanh nhân vật lịch sử, danh nhân, người dân bình
+            thường, phản ánh trí tuệ, lối sống và tinh thần của người Việt.
+            Những câu chuyện trong sách thường mang màu sắc hóm hỉnh, sâu sắc,
+            vừa giải trí vừa truyền tải bài học đạo đức và triết lý sống.
+          </p>
+          <p class="price">49.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/hanhtrinhvephuongdong.jpg"
+            alt="Hành Trình về Phương Đông"
+          />
+          <h3>Hành Trình về Phương Đông</h3>
+          <p>
+            📖 Hành Trình Về Phương Đông (Journey to the East) Tác giả: Baird T.
+            Spalding Thể loại: Triết học – Tâm linh – Khám phá phương Đông 🧠
+            Nội dung chính Hành Trình Về Phương Đông ghi lại chuyến du hành của
+            một đoàn khoa học gia phương Tây đến Ấn Độ và Tây Tạng trong những
+            năm đầu thế kỷ XX. Mục đích ban đầu của họ là nghiên cứu khoa học,
+            nhưng trong quá trình tiếp xúc với các bậc hiền triết phương Đông,
+            họ dần khám phá ra những giá trị tâm linh sâu sắc vượt ngoài hiểu
+            biết thông thường. Cuốn sách đề cập đến các chủ đề như: Luân hồi và
+            nghiệp báo Thiền định và sức mạnh của tâm thức Mối liên hệ giữa khoa
+            học và tâm linh Sự hoàn thiện bản thân thông qua tu dưỡng tinh thần
+          </p>
+          <p class="price">58.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/lamdi.jpg".jpg" alt="Làm Đĩ" />
+          <h3>Làm Đĩ</h3>
+          <p>
+            Tác giả: Vũ Trọng Phụng Thể loại: Tiểu thuyết – Văn học hiện thực
+            phê phán Xuất bản: 1936 🧠 Nội dung chính Làm Đĩ kể về cuộc đời của
+            Nhân vật Huyền, một cô gái xuất thân trong gia đình nho giáo nhưng
+            bị môi trường xã hội, giáo dục lệch lạc và định kiến phong kiến đẩy
+            vào bi kịch cuộc đời. Tác phẩm không nhằm cổ súy lối sống buông thả,
+            mà phơi bày những mâu thuẫn, giả dối và tàn nhẫn của xã hội đương
+            thời. Qua câu chuyện của Huyền, Vũ Trọng Phụng đặt ra vấn đề về: Sự
+            đạo đức giả của xã hội phong kiến nửa thực dân Cách giáo dục sai
+            lầm, áp đặt Thân phận người phụ nữ trong xã hội cũ
+          </p>
+          <p class="price">88.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/lichsuquansuvietnam.jpg"
+            alt="Lịch Sử Quân Sự Việt Nam"
+          />
+          <h3>Lịch Sử Quân Sự Việt Nam</h3>
+          <p>
+            Thể loại: Lịch sử – Quân sự – Nghiên cứu Đối tượng: Học sinh, sinh
+            viên, người nghiên cứu và người yêu lịch sử 🧠 Nội dung chính Lịch
+            Sử Quân Sự Việt Nam là công trình tổng hợp, hệ thống hóa quá trình
+            hình thành, phát triển và chiến đấu của quân đội Việt Nam qua hàng
+            nghìn năm lịch sử dựng nước và giữ nước. Cuốn sách trình bày các
+            cuộc kháng chiến, chiến lược quân sự, nghệ thuật chiến tranh và tư
+            duy quân sự của dân tộc Việt Nam từ thời cổ đại đến hiện đại. Nội
+            dung sách bao quát: Thời kỳ dựng nước và giữ nước (Văn Lang – Âu
+            Lạc) Các cuộc kháng chiến chống ngoại xâm thời phong kiến Nghệ thuật
+            quân sự thời Lý – Trần – Lê Chiến tranh giải phóng dân tộc thế kỷ XX
+            Sự hình thành và phát triển của Quân đội Nhân dân Việt Nam
+          </p>
+
+          <p class="price">119.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/lichsututuongquansuvietnam.jpg"
+            alt="Lịch Sử Tư Tương Quân Sự Việt Nam"
+          />
+          <h3>Lịch Sử Tư Tương Quân Sự Việt Nam</h3>
+          <p>
+            📖 Lịch Sử Tư Tưởng Quân Sự Việt Nam Thể loại: Lịch sử – Quân sự –
+            Tư tưởng chiến lược Đối tượng: Học sinh, sinh viên, cán bộ nghiên
+            cứu và người yêu lịch sử 🧠 Nội dung chính Lịch Sử Tư Tưởng Quân Sự
+            Việt Nam là công trình nghiên cứu chuyên sâu, hệ thống hóa quá trình
+            hình thành và phát triển tư duy quân sự của dân tộc Việt Nam qua các
+            thời kỳ lịch sử. Cuốn sách không chỉ ghi lại các cuộc chiến tranh,
+            mà tập trung phân tích nhận thức, quan điểm, đường lối và nghệ thuật
+            quân sự của các triều đại và các lãnh tụ tiêu biểu. Nội dung sách
+            bao gồm: Tư tưởng quân sự thời dựng nước và giữ nước Nghệ thuật
+            chiến tranh nhân dân trong lịch sử phong kiến Tư tưởng quân sự thời
+            Lý – Trần – Lê Tư tưởng quân sự Hồ Chí Minh Sự kế thừa và phát triển
+            tư duy quân sự trong thời đại hiện đại
+          </p>
+          <p class="price">188.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/lichsuvietnambangtranh.jpg"
+            alt="lịch sử Việt Nam bằng tranh bộ dày "
+          />
+          Lịch sử Việt Nam bằng tranh bộ dày
+          <p>
+            📖 Lịch Sử Việt Nam Bằng Tranh (Bộ Dày) Thể loại: Lịch sử – Tranh
+            minh họa – Giáo dục Hình thức: Bộ sách nhiều tập, khổ lớn, minh họa
+            màu Đối tượng: Thiếu nhi, học sinh, gia đình, người yêu lịch sử 🧠
+            Nội dung chính Lịch Sử Việt Nam Bằng Tranh (Bộ Dày) là bộ sách tái
+            hiện toàn bộ tiến trình lịch sử Việt Nam từ thời dựng nước đến hiện
+            đại thông qua tranh vẽ sinh động kết hợp lời kể ngắn gọn, súc tích.
+            Bộ sách bao gồm các giai đoạn: Thời Hồng Bàng – Văn Lang – Âu Lạc
+            Thời Bắc thuộc và đấu tranh giành độc lập Các triều đại phong kiến:
+            Ngô – Đinh – Lê – Lý – Trần – Hồ – Lê sơ – Nguyễn Thời kỳ chống thực
+            dân, đế quốc Việt Nam hiện đại
+          </p>
+          <p class="price">99.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/lichsuvietnambangtranh-1.jpg"
+            alt="Lịch Sử Việt Nam Bằng Tranh"
+          />
+          <h3>Lịch Sử Việt Nam Bằng Tranh</h3>
+          <p>
+            📖 Lịch Sử Việt Nam Bằng Tranh Thể loại: Lịch sử – Tranh minh họa –
+            Giáo dục Đối tượng: Thiếu nhi, học sinh và mọi lứa tuổi 🧠 Nội dung
+            chính Lịch Sử Việt Nam Bằng Tranh là bộ sách trình bày lịch sử Việt
+            Nam từ thời dựng nước đến hiện đại thông qua hình ảnh minh họa sinh
+            động kết hợp lời kể ngắn gọn, dễ hiểu. Mỗi giai đoạn lịch sử, mỗi
+            nhân vật và sự kiện đều được thể hiện bằng tranh vẽ, giúp người đọc
+            tiếp cận lịch sử một cách trực quan và hấp dẫn.
+          </p>
+          <p class="price">74.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/haibatrung.jpg"
+            alt="Hai Bà Trưng"
+          />
+          <h3>Hai Bà Trưng</h3>
+          <p>
+            📖 Hai Bà Trưng Thể loại: Lịch sử – Truyện lịch sử – Giáo dục Đối
+            tượng: Thiếu nhi, học sinh và người yêu lịch sử 🧠 Nội dung chính
+            Cuốn sách Hai Bà Trưng kể lại cuộc khởi nghĩa oanh liệt của Trưng
+            Trắc và Trưng Nhị vào năm 40 sau Công nguyên – một trong những trang
+            sử hào hùng đầu tiên của dân tộc Việt Nam trong công cuộc chống ách
+            đô hộ phương Bắc. Tác phẩm tái hiện bối cảnh đất nước bị áp bức,
+            tinh thần quật khởi của nhân dân và hình ảnh hai vị nữ anh hùng phất
+            cờ khởi nghĩa, giành lại độc lập trong một thời gian ngắn nhưng đầy
+            ý nghĩa lịch sử.
+          </p>
+          <p class="price">46.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/lich-uvietnamtruyen-thongvahiendai.jpg".jpg"
+            alt="Lịch Sử Việt Nam Truyền Thống Và Hiện Đại"
+          />
+          <h3>Lịch Sử Việt Nam Truyền Thống Và Hiện Đại</h3>
+          <p>
+            📖 Lịch Sử Việt Nam: Truyền Thống và Hiện Đại Thể loại: Lịch sử –
+            Nghiên cứu – Giáo dục Đối tượng: Học sinh, sinh viên, giáo viên và
+            người yêu lịch sử 🧠 Nội dung chính Lịch Sử Việt Nam: Truyền Thống
+            và Hiện Đại là cuốn sách trình bày toàn diện tiến trình lịch sử Việt
+            Nam từ thời dựng nước cho đến thời kỳ hiện đại. Tác phẩm kết hợp hài
+            hòa giữa giá trị truyền thống của dân tộc và những biến đổi lớn
+            trong thời đại mới, giúp người đọc có cái nhìn đầy đủ và hệ thống về
+            lịch sử Việt Nam.
+          </p>
+          <p class="price">91.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/nhagiakim-1.png" alt="Nhà Giả Kim" />
+          <h3>Nhà Giả Kim</h3>
+          <p>
+            📖 Nhà Giả Kim (The Alchemist) Tác giả: Paulo Coelho Thể loại: Triết
+            lý – Tâm linh – Truyền cảm hứng 🧠 Nội dung chính Nhà Giả Kim kể về
+            hành trình của Santiago, một chàng chăn cừu trẻ tuổi ở Tây Ban Nha,
+            lên đường đi tìm kho báu mà cậu đã mơ thấy. Trên con đường băng qua
+            sa mạc, Santiago gặp nhiều con người khác nhau và học được những bài
+            học quý giá về ước mơ, niềm tin và ý nghĩa cuộc sống.
+          </p>
+          <p class="price">118.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/haiongtiensi.png"
+            alt="Hai Ông Tiến Sĩ"
+          />
+          <h3>Hai Ông Tiến Sĩ</h3>
+          <p>
+            📖 Hai Ông Tiến Sĩ Thể loại: Truyện dân gian – Truyện ngụ ngôn –
+            Giáo dục Đối tượng: Thiếu nhi, học sinh và người yêu văn học dân
+            gian 🧠 Nội dung chính Hai Ông Tiến Sĩ là câu chuyện dân gian Việt
+            Nam kể về hai người đỗ đạt cao, mang danh tiến sĩ nhưng lại thiếu
+            hiểu biết thực tế, chủ quan và khoe khoang học vấn. Trong quá trình
+            đi thi hoặc đi làm quan, họ liên tục rơi vào những tình huống dở
+            khóc dở cười vì không hiểu đời sống dân gian và thiếu khả năng ứng
+            xử linh hoạt. Qua những tình huống hài hước, câu chuyện cho thấy
+            rằng học vấn nếu không đi đôi với thực tiễn và đạo đức thì sẽ trở
+            nên vô nghĩa.
+          </p>
+          <p class="price">98.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/suviet.jpg" alt="Sử Việt" />
+          <h3>Sử Việt</h3>
+          <p>
+            📖 Sử Việt Thể loại: Lịch sử Việt Nam – Giáo dục – Tham khảo Đối
+            tượng: Học sinh, sinh viên và người quan tâm đến lịch sử dân tộc 🧠
+            Nội dung chính Sử Việt là tên gọi chung cho các cuốn sách trình bày
+            lịch sử Việt Nam qua các thời kỳ, từ thời dựng nước đến hiện đại.
+            Nội dung sách thường khái quát các triều đại, sự kiện lịch sử, nhân
+            vật tiêu biểu và các cuộc đấu tranh bảo vệ đất nước, giúp người đọc
+            có cái nhìn tổng quan và hệ thống về lịch sử dân tộc.
+          </p>
+          <p class="price">77.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/tatden.jpg" alt="Tắt Đèn" />
+          <h3>Tắt Đèn</h3>
+          <p>
+            📖 Tắt Đèn Tác giả: Ngô Tất Tố Thể loại: Tiểu thuyết hiện thực – Phê
+            phán xã hội Xuất bản: 1939 🧠 Nội dung chính Tắt Đèn kể về cuộc sống
+            bần cùng, khổ cực của người nông dân Việt Nam dưới chế độ phong kiến
+            trước cách mạng. Nhân vật chính là Túy, người nông dân nghèo, phải
+            chịu đựng những bất công trong đời sống, lao động vất vả nhưng luôn
+            giữ phẩm giá và nghị lực.
+          </p>
+          <p class="price">29.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/toidihoc.jpg" alt="Tôi Đi Học" />
+          <h3>Tôi Đi Học</h3>
+          <p>
+            📖 Tôi Đi Học Tác giả: Thanh Tịnh Thể loại: Văn học hiện thực – Ký
+            ức tuổi thơ Xuất bản: 1941 🧠 Nội dung chính Tôi Đi Học là tác phẩm
+            kể về những kỷ niệm tuổi thơ của tác giả, đặc biệt là ngày đầu tiên
+            đến trường. Qua lăng kính của một cậu bé, tác phẩm khắc họa: Cảm
+            giác bỡ ngỡ, lo lắng nhưng đầy háo hức Sự chuẩn bị của gia đình và
+            môi trường xung quanh Những trải nghiệm đầu đời khi bước vào lớp học
+            Câu chuyện giản dị nhưng giàu cảm xúc, khiến người đọc nhớ lại những
+            ngày tháng thơ ấu tươi đẹp và ý nghĩa của việc học tập.
+          </p>
+          <p class="price">28.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/truyendangianvietnam.jpg"
+            alt="Truyện Dân Gian Việt Nam"
+          />
+          <h3>Truyện Dân Gian Việt Nam</h3>
+          <p>
+            📖 Truyện Dân Gian Việt Nam Thể loại: Văn học dân gian – Truyện kể –
+            Giáo dục Đối tượng: Thiếu nhi, học sinh và mọi lứa tuổi 🧠 Nội dung
+            chính Truyện Dân Gian Việt Nam là tuyển tập các câu chuyện dân gian
+            phong phú, truyền tải trí tuệ, đạo lý, phong tục và văn hóa Việt Nam
+            qua nhiều thế hệ. Những câu chuyện thường xoay quanh: Nhân vật dân
+            gian tiêu biểu Truyền thống đạo đức và lễ nghi Tinh thần quật cường,
+            thông minh và hài hước Nội dung sách mang tính giải trí nhưng cũng
+            giáo dục, giúp người đọc hiểu rõ lối sống, tư duy và trí tưởng tượng
+            của người Việt xưa.
+          </p>
+          <p class="price">99.500 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/truyenkieu.jpg" alt="Truyện Kiều" />
+          <h3>Truyện Kiều</h3>
+          <p>
+            📖 Truyện Kiều Tác giả: Nguyễn Du Thể loại: Truyện thơ – Văn học cổ
+            điển – Giáo dục Xuất bản: 1820 🧠 Nội dung chính Truyện Kiều là kiệt
+            tác văn học Việt Nam, kể về cuộc đời bi thương nhưng đầy nghị lực
+            của Thúy Kiều, một người con gái tài sắc vẹn toàn nhưng bị xã hội
+            bất công và những biến cố đời sống đẩy vào những bi kịch đau thương.
+            Câu chuyện phản ánh: Số phận người phụ nữ trong xã hội phong kiến
+            Những mâu thuẫn xã hội, đạo đức giả và bất công Tình yêu, hiếu thảo
+            và nhân phẩm con người
+          </p>
+          <p class="price">198.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/vanhocdangianvietnam.jpg"
+            alt="Văn Học Dân Gian việt Nam"
+          />
+          <h3>Văn Học Dân Gian việt Nam</h3>
+          <p>
+            📖 Văn Học Dân Gian Việt Nam Thể loại: Văn học dân gian – Truyện kể
+            – Ca dao – Tục ngữ Đối tượng: Thiếu nhi, học sinh, sinh viên và
+            người yêu văn hóa dân gian 🧠 Nội dung chính Văn Học Dân Gian Việt
+            Nam là tuyển tập các tác phẩm dân gian, bao gồm truyện cổ tích,
+            truyện ngụ ngôn, truyện cười, ca dao, tục ngữ và đồng dao. Sách phản
+            ánh cuộc sống, tư duy, đạo đức và phong tục tập quán của người Việt
+            xưa, đồng thời lưu giữ truyền thống văn hóa dân gian quý giá. Các
+            nội dung tiêu biểu: Câu chuyện về nhân vật dân gian tiêu biểu Những
+            bài ca dao, tục ngữ giàu triết lý Những truyện ngụ ngôn, truyện cười
+            mang tính giáo dục và giải trí
+          </p>
+          <p class="price">98.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img
+            src="image/vietnamtronglichsuthegioi.jpg"
+            alt="Việt Nam Trong Lịch Sử Thế Giới"
+          />
+          <h3>Việt Nam Trong Lịch Sử Thế Giới</h3>
+          <p>
+            📖 Việt Nam Trong Lịch Sử Thế Giới Thể loại: Lịch sử – Nghiên cứu –
+            Giáo dục Đối tượng: Học sinh, sinh viên, giáo viên, nhà nghiên cứu
+            và người yêu lịch sử 🧠 Nội dung chính Việt Nam Trong Lịch Sử Thế
+            Giới là cuốn sách nghiên cứu, trình bày vị trí, vai trò và ảnh hưởng
+            của Việt Nam trong bối cảnh lịch sử thế giới. Tác phẩm giúp người
+            đọc hiểu rằng lịch sử Việt Nam không tách rời khỏi các biến cố, xu
+            hướng và các nền văn minh lớn trên toàn cầu.
+          </p>
+          <p class="price">78.800 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+        <div class="product">
+          <img src="image/nguvan.jpg" alt="Ngữ Văn 8" />
+          <h3>Ngữ Văn 8</h3>
+          <p>Ngữ Văn 8
+
+Thể loại: Giáo trình – Ngữ văn – Giáo dục
+Đối tượng: Học sinh lớp 8, giáo viên, phụ huynh
+
+🧠 Nội dung chính
+
+Ngữ Văn 8 là bộ sách giáo khoa và tài liệu học tập dành cho học sinh lớp 8, cung cấp kiến thức toàn diện về văn học, tiếng Việt và rèn luyện kỹ năng viết – đọc – phân tích văn bản. Nội dung sách bao gồm:
+
+Văn học dân gian, trung đại và hiện đại Việt Nam
+
+Các bài thơ, truyện ngắn, truyện dài tiêu biểu
+
+Ngôn ngữ, ngữ pháp và kỹ năng sử dụng tiếng Việt
+
+Hướng dẫn làm bài tập, phân tích và cảm nhận văn bản</p>
+          <p class="price">91.000 VND</p>
+          <a href="cuahang.html">Xem chi tiết</a>
+        </div>
+
+       
+
+    <footer>
+      <p>📞 Hotline CSKH: 1900 9999</p>
+      <p>🏢 Địa chỉ: 123 Đường Sách, TP.HCM</p>
+      <p>🧾 Mã số thuế: 0123456789</p>
+      <p>
+        👁️ Lượt truy cập website: <span class="counter" id="visitCount"></span>
+      </p>
+    </footer>
+
+    <!-- ===== SCRIPT ĐẾM LƯỢT TRUY CẬP ===== -->
+    <script>
+      let visit = localStorage.getItem("visitCount");
+
+      if (visit === null) {
+        visit = 1;
+      } else {
+        visit = parseInt(visit) + 30;
+      }
+
+      localStorage.setItem("visitCount", visit);
+      document.getElementById("visitCount").innerText = visit;
+    </script>
+  </body>
+</html>

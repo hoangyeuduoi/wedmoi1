@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa BOBY BOOCK</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #4f524b;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #1c6bbe;
+        color: #141414;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #0d171f;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: rgb(19, 18, 18);
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .product {
+        background-color: #a72b81;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .product:hover {
+        transform: translateY(-5px);
+      }
+
+      .product img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .product h3 {
+        margin: 10px 0 5px;
+      }
+
+      .product p {
+        font-size: 14px;
+        color: #111010;
+      }
+
+      .product .price {
+        font-weight: bold;
+        color: #e63946;
+        margin: 10px 0;
+      }
+
+      .product button {
+        background-color: #1e90ff;
+        color: #f30303;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .product button:hover {
+        background-color: #3062ac;
+      }
+
+      footer {
+        background-color: #1e90ff;
+        color: rgb(187, 48, 48);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cửa Hàng Sách BOBY BOCK</h1>
+    </header>
+
+    <nav>
+      <a href="trangchu.html">Trang Chủ</a>
+      <a href="gioithieu.html">Giới Thiệu</a>
+      <a href="cuahang.html">Sản Phẩm</a>
+      <a href="https://www.24h.com.vn/sach-giao-khoa-c216e8001.html">Tin Tức</a>
+      <a href="https://www.facebook.com/Giangmoi.a?locale=vi_VN">Liên Hệ</a>
+    </nav>
+
+    <div class="container">
+      <h2>Danh Mục Sách</h2>
+      <div class="products">
+        <div class="product">
+          <img src="d:/nhagiakim.jpg" alt="Sách 1" />
+          <h3>Nhà Giả Kim</h3>
+          <p>
+            Cuốn sách truyền cảm hứng về hành trình theo đuổi ước mơ và khám phá
+            bản thân.
+          </p>
+          <p class="price">120.000₫</p>
+          <a></a>
+          <button><a></a> vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img src="d:\sách của Mới\img\TẮT ĐÈN.jpg" alt="Sách 2" />
+          <h3>Tắt Đèn</h3>
+          <p>
+            Tiểu thuyết phản ánh đời sống nông dân Việt Nam dưới chế độ phong
+            kiến.
+          </p>
+          <p class="price">80.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img src="d:\sách của Mới\img\TRUYỆN KIỀU.jpg" alt="Sách 3" />
+          <h3>Truyện Kiều</h3>
+          <p>
+            Kiệt tác văn học Việt Nam về cuộc đời bi thương nhưng đầy nghị lực
+            của Thúy Kiều.
+          </p>
+          <p class="price">150.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img src="d:\sách của Mới\img\Tôi Đi Học.jpg" alt="Sách 4" />
+          <h3>Tôi Đi Học</h3>
+          <p>
+            Kể lại những kỷ niệm tuổi thơ, ngày đầu tiên đến trường của tác giả.
+          </p>
+          <p class="price">50.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img
+            src="d:\sách của Mới\img\lich-su-viet-nam-bang-tranh-hai-ba-trung.jpg"
+            alt="Sách 5"
+          />
+          <h3>Hai Bà Trưng</h3>
+          <p>
+            Khởi nghĩa oanh liệt của hai nữ anh hùng dân tộc, biểu tượng lòng
+            yêu nước.
+          </p>
+          <p class="price">70.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img
+            src="d:\sách của Mới\img\lịch sử việt nam bằng tranh.jpg"
+            alt="Sách 6"
+          />
+          <h3>Lịch Sử Việt Nam Bằng Tranh</h3>
+          <p>
+            Minh họa lịch sử Việt Nam qua tranh, giúp học sinh dễ hiểu và nhớ
+            lâu.
+          </p>
+          <p class="price">200.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img src="d:\sách của Mới\img\đắc nhân tâm.png" alt="Sách 7" />
+          <h3>Đắc Nhân Tâm</h3>
+          <p>
+            Cuốn sách kinh điển về nghệ thuật giao tiếp và ứng xử trong cuộc
+            sống.
+          </p>
+          <p class="price">120.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img
+            src="d:\sách của Mới\img\doanh-nghiep-cua-the-ky-21.jpg"
+            alt="Sách 8"
+          />
+          <h3>Doanh Nghiệp Thế Kỷ 21</h3>
+          <p>
+            Những chiến lược và tư duy kinh doanh hiện đại cho doanh nhân và
+            lãnh đạo.
+          </p>
+          <p class="price">180.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img
+            src="d:\sách của Mới\img\Đời ngắn đừng ngủ dài.jpg"
+            alt="Sách 9"
+          />
+          <h3>Đời Ngắn Đừng Ngủ Dài</h3>
+          <p>
+            Khích lệ sống trọn vẹn, làm việc hiệu quả và tận hưởng cuộc sống.
+          </p>
+          <p class="price">100.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img src="d:\sách của Mới\img\nha gia kim.jpg" alt="Sách 10" />
+          <h3>Nhà Giả Kim 2</h3>
+          <p>Tiếp nối hành trình khám phá bản thân và theo đuổi ước mơ.</p>
+          <p class="price">130.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="d:\sách của Mới\img\con cóc làm cậu ông trời.jpg"
+            alt="Sách 11"
+          />
+          <h3>Con Cóc Làm Cậu Ông Trời</h3>
+          <p>Truyện dân gian Việt Nam hài hước và giáo dục trẻ em.</p>
+          <p class="price">60.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product">
+          <img src="d:\sách của Mới\img\bản đồ mây.jpg" alt="Sách 12" />
+          <h3>Bản Đồ Mây</h3>
+          <p>Cuốn sách phiêu lưu đầy tưởng tượng và triết lý về cuộc sống.</p>
+          <p class="price">140.000₫</p>
+          <button>Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Hotline: 0123 456 789 | CSKH: 0987 654 321</p>
+      <p>Địa chỉ: 123 Đường Sách, TP Hồ Chí Minh | MST: 0101010101</p>
+      <p>&copy; 2025 Cửa Hàng Sách BOBY BOCK</p>
+    </footer>
+  </body>
+</html>
